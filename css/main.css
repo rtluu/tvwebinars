@@ -65,6 +65,10 @@ html, body{
   text-align: center;
 }
 
+.tagline #word{
+  color: #C03734;
+}
+
 .cta-button{
   background: #C03734;
   border: 0;
