@@ -1,0 +1,164 @@
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin: 0;
+    letter-spacing: 0.5px;
+    padding: 0;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+.background{
+  background-color: #544354;
+  background-image: -webkit-linear-gradient(-45deg, #544354 50%, #C03734 50%);
+  display: block;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  overflow: hidden;
+  top: 0;
+}
+
+/*Navbar Styling*/
+.nav{
+  background: white;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.06);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.nav .nav-inner{
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1020px;
+  width: 100%;
+}
+
+.nav .nav-inner .container{
+  display: inline-block;
+  float: left;
+}
+
+.nav .nav-inner #right{
+  float: right;
+}
+
+.nav .nav-inner .container a{
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+}
+
+.nav .nav-inner #left a .home-logo{
+  background: url('../images/full_logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 194px 40px;
+  display: inline-block;
+  height: 40px;
+  padding: 10px 20px;
+  position: relative;
+  width: 194px;
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+       -o-transition: all 0.2s;
+          transition: all 0.2s;
+}
+
+.nav .nav-inner #right a{
+  margin: 13px 20px;
+}
+
+.nav .nav-inner #right a .consultation{
+  background: #544354;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 22px;
+  outline: none;
+  padding: 6px 15px;
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+       -o-transition: all 0.2s;
+          transition: all 0.2s;
+}
+
+.nav .nav-inner #right a .consultation:hover{
+  background: #7f667f;
+}
+
+
+/*About Block Styling*/
+.about-box{
+  background: white;
+  display: block;
+  margin: 0px auto 32px auto;
+  max-width: 680px;
+  padding: 32px 60px;
+  position: relative;
+  top: 92px;
+  z-index: 1;
+}
+
+.about-box h1.title{
+  color: #999999;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.about-box h4.mission{
+  color: #999999;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.about-box p.text{
+  color: #999999;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.about-box ul.package-list{
+  margin: -6px 0 16px 32px;
+}
+
+.about-box ul.package-list li{
+  color: #999999;
+  font-size: 16px;
+  line-height: 24px;
+  list-style: circle;
+}
+
+/*Copyright box*/
+.copyright-box{
+  background: white;
+  display: block;
+  margin: 0 auto;
+  max-width: 680px;
+  padding: 32px 60px;
+  position: relative;
+  top: 92px;
+  z-index: 1;
+}
+
+.copyright-text{
+  color: #DDDDDD;
+  font-size: 12px;
+  line-height: 18px;
+
+}
