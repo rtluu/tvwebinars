@@ -107,19 +107,27 @@ html, body{
 
 
 /*About Block Styling*/
-.about-box{
+.content-box{
   background: white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   display: block;
   margin: 0px auto 32px auto;
-  max-width: 680px;
+  max-width: 940px;
   padding: 32px 60px;
   position: relative;
   top: 92px;
-  width: calc(90% - 120px);
+  width: calc(90% - 100px);
   z-index: 1;
 }
 
-.about-box h1.title{
+#team-box{
+  max-width: 940px;
+  padding: 32px 48px;
+}
+
+.title{
   color: #999999;
   font-size: 36px;
   font-weight: 300;
@@ -127,7 +135,7 @@ html, body{
   text-align: center;
 }
 
-.about-box h4.mission{
+h4.mission{
   color: #999999;
   font-size: 18px;
   font-weight: 600;
@@ -135,36 +143,64 @@ html, body{
   text-align: center;
 }
 
-.about-box p.text{
+p.text{
   color: #999999;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 16px;
 }
 
-.about-box ul.package-list{
+ul.package-list{
   margin: -6px 0 16px 32px;
 }
 
-.about-box ul.package-list li{
+ul.package-list li{
   color: #999999;
   font-size: 16px;
   line-height: 24px;
   list-style: circle;
 }
 
-/*Copyright box*/
-.copyright-box{
-  background: white;
-  display: block;
-  margin: 0 auto;
-  max-width: 680px;
-  padding: 32px 60px;
+
+/*Team*/
+.teammate{
+  display: inline-block;
+  max-width: 49.5%;
   position: relative;
-  top: 92px;
-  width: 90%;
-  z-index: 1;
+  margin-bottom: 32px;
+  vertical-align:top;
 }
+
+.profile-pic{
+  display: block;
+  margin: 8px auto;
+  position: relative;
+}
+
+h3.name{
+  font-size: 16px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+h4.role{
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+p.bio{
+  display: block;
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 87.5%;
+}
+
+
+
+/*Copyright box*/
 
 .copyright-text{
   color: #DDDDDD;
@@ -177,41 +213,53 @@ html, body{
 
 
 @media screen and (max-width: 950px) {
-  .about-box{
+  .content-box{
     padding: 32px 32px;
     top: 82px;
     width: calc(90% - 64px);
   }
 
-  .about-box h1.title{
+  h1.title{
     font-size: 32px;
     margin-bottom: 12px;
   }
 
-  .about-box h4.mission{
+  h4.mission{
     font-size: 16px;
     margin-bottom: 32px;
   }
 
-  .about-box p.text{
+  p.text{
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 14px;
   }
 
-  .about-box ul.package-list{
+  ul.package-list{
     margin: -4px 0 12px 24px;
   }
 
-  .about-box ul.package-list li{
+  ul.package-list li{
     font-size: 14px;
     line-height: 20px;
   }
 
-  .copyright-box{
+}
+
+@media screen and (max-width: 800px) {
+  #team-box{
     padding: 32px 32px;
-    top: 82px;
-    width: calc(90% - 64px);
+  }
+
+  .teammate{
+    display: block;
+    max-width: 100%;
+    margin: 32px auto;
+  }
+
+  p.bio{
+    max-width: 400px;
+    width: 90%;
   }
 
 }
@@ -246,6 +294,17 @@ html, body{
        -moz-transition: all 0.2s;
          -o-transition: all 0.2s;
             transition: all 0.2s;
+  }
+
+  .content-box{
+    padding: 20px 20px;
+    top: 82px;
+    width: calc(100% - 40px);
+  }
+
+  .profile-pic{
+    height: 200px;
+    width: 200px;
   }
 
 }
