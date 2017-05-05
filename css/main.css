@@ -69,19 +69,31 @@ html, body{
   color: #C03734;
 }
 
+a{
+  outline: none;
+  text-decoration: none;
+}
+
 .cta-button{
   background: #C03734;
   border: 0;
   color: white;
   cursor: pointer;
-  display: block;
+  display: inline-block;
   font-size: 24px;
+  left: 50%;
   margin: 56px auto;
+  outline: none;
   padding: 16px 64px;
+  position: relative;
   -webkit-transition: all 0.2s;
      -moz-transition: all 0.2s;
        -o-transition: all 0.2s;
           transition: all 0.2s;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .cta-button:hover{
