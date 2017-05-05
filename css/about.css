@@ -128,7 +128,7 @@ html, body{
 }
 
 .title{
-  color: #999999;
+  color: #222222;
   font-size: 36px;
   font-weight: 300;
   margin-bottom: 16px;
@@ -136,15 +136,15 @@ html, body{
 }
 
 h4.mission{
-  color: #999999;
+  color: #222222;
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   text-align: center;
 }
 
 p.text{
-  color: #999999;
+  color: #222222;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 16px;
@@ -155,7 +155,7 @@ ul.package-list{
 }
 
 ul.package-list li{
-  color: #999999;
+  color: #222222;
   font-size: 16px;
   line-height: 24px;
   list-style: circle;
@@ -178,12 +178,14 @@ ul.package-list li{
 }
 
 h3.name{
+  color: #222222;
   font-size: 16px;
   margin-bottom: 2px;
   text-align: center;
 }
 
 h4.role{
+  color: #222222;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 6px;
@@ -191,6 +193,7 @@ h4.role{
 }
 
 p.bio{
+  color: #222222;
   display: block;
   font-size: 14px;
   margin: 0 auto;
