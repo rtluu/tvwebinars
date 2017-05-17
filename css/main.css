@@ -106,6 +106,7 @@ a{
 
 .link-box .left{
   float: left;
+  height: 30px;
   position: relative;
 }
 
@@ -130,13 +131,40 @@ a{
 
 .link-box .right{
   float: right;
+  height: 30px;
   position: relative;
-  top: 2px;
 }
 
 .link-box .right .social{
   color: #CCCCCC;
+  display: inline-block;
+  height: 34px;
   text-decoration: none;
+  vertical-align: top;
+}
+
+.link-box .right .about-trigger{
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+       -o-transition: all 0.2s;
+          transition: all 0.2s;
+}
+
+.link-box .right .about-trigger:hover p{
+    color: #544354;
+}
+
+.link-box .right .about-trigger p{
+  color: #999999;
+  font-size: 18px;
+  padding: 5px;
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+       -o-transition: all 0.2s;
+          transition: all 0.2s;
 }
 
 .link-box .right .social:hover i#youtube{
@@ -156,40 +184,13 @@ a{
      -moz-transition: all 0.2s;
        -o-transition: all 0.2s;
           transition: all 0.2s;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
-
-
-/*About Trigger*/
-.about-trigger{
-  bottom: 24px;
-  position: absolute;
-  right: 24px;
-  text-decoration: none;
-}
-
-.about-trigger:hover .circle p{
-  color: #CCCCCC;
-}
-
-.about-trigger .circle{
-  background: white;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-}
-
-.about-trigger .circle p{
-  color: #999999;
-  line-height: 30px;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-  -webkit-transition: all 0.2s;
-     -moz-transition: all 0.2s;
-       -o-transition: all 0.2s;
-          transition: all 0.2s;
-}
-
 
 
 
@@ -234,18 +235,7 @@ a{
     padding: 4px;
   }
 
-  .about-trigger{
-    bottom: 16px;
-    right: 16px;
-  }
-
-  .about-trigger .circle{
-    height: 24px;
-    width: 24px;
-  }
-
-  .about-trigger .circle p{
-    line-height: 24px;
+  .link-box .right .about-trigger p{
     font-size: 16px;
   }
 
@@ -287,25 +277,19 @@ a{
     top: 1px;
   }
 
+  .link-box .right .social{
+    height: 27px;
+  }
+
   .link-box .right .social i{
     font-size: 18px;
     margin: 0 2px;
     padding: 4px;
   }
 
-  .about-trigger{
-    bottom: 12px;
-    right: 12px;
-  }
-
-  .about-trigger .circle{
-    height: 20px;
-    width: 20px;
-  }
-
-  .about-trigger .circle p{
-    line-height: 20px;
+  .link-box .right .about-trigger p{
     font-size: 14px;
+    padding: 4px;
   }
 
 }
