@@ -69,6 +69,18 @@ html, body{
   color: #C03734;
 }
 
+.video-box{
+  display: block;
+  position: relative;
+}
+
+.demo-video{
+  display: block;
+  margin: 24px auto;
+  max-width: 500px;
+  width: 80%;
+}
+
 a{
   outline: none;
   text-decoration: none;
@@ -77,15 +89,20 @@ a{
 .cta-button{
   background: #C03734;
   border: 0;
+  border-radius: 4px;
+  bottom: 10px;
+  -webkit-box-shadow: 0px 1px 6px 1px rgba(105,105,105,0.75);
+  -moz-box-shadow: 0px 1px 6px 1px rgba(105,105,105,0.75);
+  box-shadow: 0px 1px 6px 1px rgba(105,105,105,0.75);
   color: white;
   cursor: pointer;
   display: inline-block;
-  font-size: 24px;
+  font-size: 20px;
   left: 50%;
-  margin: 56px auto;
+  margin: 0 auto 0px auto;
   outline: none;
-  padding: 16px 64px;
-  position: relative;
+  padding: 10px 16px;
+  position: absolute;
   -webkit-transition: all 0.2s;
      -moz-transition: all 0.2s;
        -o-transition: all 0.2s;
@@ -214,9 +231,8 @@ a{
   }
 
   .cta-button{
-    font-size: 21px;
-    margin: 40px auto;
-    padding: 12px 48px;
+    font-size: 18px;
+    padding: 8px 14px;
   }
 
   .link-box .left .email h6{
@@ -262,9 +278,8 @@ a{
   }
 
   .cta-button{
-    font-size: 20px;
-    margin: 32px auto;
-    padding: 10px 44px;
+    font-size: 16px;
+    padding: 6px 12px;
   }
 
   .link-box .left .email h6{
